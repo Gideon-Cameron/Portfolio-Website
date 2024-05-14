@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/55cbb344f3.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="facebook.png" class="logo" style="width: 30px;"> -->
+                <p>
+                    <span id="G">G</span><span>ideon.</span>
+                </p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <img class="closemenu-icon" src="icon-close-menu.svg" alt="icon" onclick="closemenu()" >
+                </ul>
+                 <img class="menu-icon" src="icon-menu.svg" alt="icon" onclick="openmenu()">
+            </nav>
+            <div class="header-text">
+                <p>FRONTEND DEVELOPER</p>
+                <h1>Hi, I'm <span>Gideon</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="ProfilePic.jpg" alt=""><!--ad personal pic-->
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>
+                        My name is Gideon, I come from Sweden and my passion is codeing.
+                        <br>to inhance my skills and experience I have done freelance jobs,<br>
+                        worked with clients and on persinal projects as well as studying with<br> 
+                        online courses and hands on work.<br> 
+                        I am now in the procces of Taking on Freelance or company funded jobs<br>
+                        to challange myself and learn new skills. 
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Sklls</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents  active-tab" id="skills">
+                        <ul>
+                            <li><span>FRONTEND<br></span>HTML, CSS, JAVASCRIPT</li>
+                            <li><span>Frameworks and Version-control<br></span>Bootstrap, Jqeury, Git, Github</li>
+                            <li><span>Web Development<br></span>Responsiv, User frendly, Reusible code, Reserch</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2019 - Current<br></span>Worked with Codeacademy, Freecodecamp, W3school, and EDX on developing my skills,</li>
+                            <li><span>2021 - Current<br></span>Freelance and Development projects</li>
+                            <li><span>2019 - 2022<br></span>Working with clients and developers</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Frontend Development <br> </span>Codeacademy, Freecodecamp, EDX, W3school and Scrimba</li>
+                            <li><span>Persinal<br></span>Thousends of hours of video tutorials, reserch and hands on experience</li>
+                            <li><span>Hands on<br> </span>Working with clients and developers to refine my skills and gain experience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- services -->\
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2 id="text">Frontend</h2> 
+                <p>I design user frendly and responsev websites</p>
+                    <a href="#">Learn more</a>
+            </div> 
+            <div>
+                <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                <h2>Website Design</h2>
+                <p>
+                    Using CSS, JavaScript and Frameworks I exel at Web design. 
+                </p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Reserch and Colaberation</h2>
+                <p>
+                    Reserch and colaberating with other developers is a great wey to make sure that everything runs smothly
+                    and solving gliches before they become problems.
+                </p>
+                    <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>  
+</div>
+<!-- portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+               <img src="study.jpg"> 
+                <div class="layer">
+                    <h3>Addis Connect</h3>
+                    <p>A website to conect people to the things they are missing</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="guitar.jpg ">
+                <div class="layer">
+                    <h3>CSS work</h3>
+                    <p>if you like addvanced css then this is the website for you</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="study.jpg">
+                <div class="layer">
+                    <h3>advanced functions</h3>
+                    <p>try out my advanced functions website and ess how you like it</p>
+                   <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn" id="less" onclick="seeMore()">see more</a>
+
+
+        <div class="work-list more" id="more">
+            <div class="work">
+               <img src="study.jpg"> 
+                <div class="layer">
+                    <h3>Addis Connect</h3>
+                    <p>A website to conect people to the things they are missing</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="guitar.jpg ">
+                <div class="layer">
+                    <h3>CSS work</h3>
+                    <p>if you like addvanced css then this is the website for you</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="study.jpg">
+                <div class="layer">
+                    <h3>advanced functions</h3>
+                    <p>try out my advanced functions website and ess how you like it</p>
+                   <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn more" id="hide" onclick="seeLess()">see less</a>
+    </div>
+</div>
+<!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> gideonwork20@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 0980277582</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Resume .pdf" download class="btn btn2">Donload Cv</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required> 
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea> 
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Gideon. Made with <i class="fa-solid fa-heart"></i> by awesome cameron</p>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html> 

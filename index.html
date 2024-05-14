@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/55cbb344f3.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="facebook.png" class="logo" style="width: 30px;"> -->
+                <p>
+                    <span id="G">G</span><span>ideon.</span>
+                </p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                 <i class="fas fa-bars" onclick="openmenu()"></i> 
+            </nav>
+            <div class="header-text">
+                <p>FRONTEND DEVELOPER</p>
+                <h1>Hi, I'm <span>Gideon</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="ProfilePic.jpg" alt=""><!--ad personal pic-->
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>
+                        My name is Gideon, I'm from Sweden and my passion is codeing.
+                        <br>to inhance my skills and experience I have worked with a variety <br>
+                        of jobs and clients, including freelance and small buisnises. <br>
+                        Currently looking to leverage my skill's to take on Freelance or <br> 
+                        company funded jobs. Hopping to challange myself and learn new skills. 
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Sklls</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents  active-tab" id="skills">
+                        <ul>
+                            <li><span>FRONTEND<br></span>HTML, CSS, JAVASCRIPT, REACT, RESPONSIVE DESIGN</li>
+                            <li><span>Frameworks and Version-control<br></span>BOOTSTRAP, TAILWIND CSS, Git, Github</li>
+                            <li><span>Web Development<br></span>Responsiv, User frendly, Clean Design, Reusible code</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2019 - Current<br></span>Worked with Codeacademy, Freecodecamp, W3school, and EDX on developing my skills,</li>
+                            <li><span>2021 - Current<br></span>Advanced my skills by taking on Freelance and Development projects</li>
+                            <li><span>2022 - Current<br></span>Working with clients and developers to create exciting user frendly web aplications</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Frontend Development <br> </span>Codeacademy, Freecodecamp, EDX, W3school and Scrimba</li>
+                            <li><span>Persinal<br></span>Thousends of hours of video tutorials, reserch and hands on experience</li>
+                            <li><span>Hands on<br> </span>Working with clients and developers to refine my skills and gain experience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- services -->\
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2 id="text">Frontend</h2> 
+                <p>I design user frendly and responsev websites with experties in HTML, CSS, JavaScript, and React</p>
+
+                    <!-- <a href="#">Learn more</a> -->
+            </div> 
+            <div>
+                <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                <h2>Website Design</h2>
+                <p>
+                    Using CSS, JavaScript, REACT, and Frameworks I exel at Web design. 
+                </p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Reserch and Colaberation</h2>
+                <p>
+                    Reserch and colaberating with other developers is a great wey to insure that everything run's smothly,
+                    while solving problems before they become problems.
+                </p>
+                    <!-- <a href="#">Learn more</a> -->
+            </div>
+        </div>
+    </div>  
+</div>
+<!-- portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+               <img src="Space-Tourism.webp"> 
+                <div class="layer">
+                    <h3>Space Tourism</h3>
+                    <p>Using HTML, CSS, JavaScript, and React to create this visualy stunning space tourism website.</p>
+                    <a href="https://gideon-cameron.github.io/Space-Tourism-React/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Calculator-App.jpg">
+                <div class="layer">
+                    <h3>Calculator App</h3>
+                    <p>Using HTML, CSS, nad JavaScript to create a functening calculator with changeble themes.</p>
+                    <a href="https://gideon-cameron.github.io/Calculator-app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Landing-page.jpg">
+                <div class="layer">
+                    <h3>Remote Work Landing Page</h3>
+                    <p>Using HTML, CSS, and JavaScript to create a responsive and compatible landing page.</p>
+                   <a href="https://gideon-cameron.github.io/Intro-section-with-dropdown-navigation-solution/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#" class="btn">see more</a> -->
+    </div>
+</div>
+<!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> gideonwork20@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 0980277582</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="My-Resume.pdf" download class="btn btn2">Donload Cv</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required> 
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea> 
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Gideon. Made with <i class="fa-solid fa-heart"></i> by awesome cameron</p>
+    </div>
+</div>
+
+     <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script> 
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx2iK5QZx_ghMZ-GVnXs15kfsFykDITIhZwizUSHK1X3AGdrVwnpmI2ezcSLLyeKqnK/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html> 
